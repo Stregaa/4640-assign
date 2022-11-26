@@ -275,4 +275,7 @@ resource "digitalocean_droplet" "web" {
   }
 
 }
-```
+```  
+Apply Terraform:
+1. Use ```terraform apply```:
+![image](https://user-images.githubusercontent.com/64290337/204081456-13116bf2-53cc-487c-8e78-6d830964366a.png)
