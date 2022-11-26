@@ -3,7 +3,7 @@
 # API token
 variable "do_token" {
   type = string
-  default = "<DO token here>"
+  default = "<DigitalOcean token here>"
 }
 
 # set default region to sfo3

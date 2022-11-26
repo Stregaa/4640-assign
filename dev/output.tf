@@ -3,5 +3,6 @@ output "server_ip" {
 }
 
 output "database_output" {
-  value = data.digitalocean_database_cluster.mongodb-example.uri
+  sensitive = true
+  value = digitalocean_database_cluster.mongodb-example.uri
 }
