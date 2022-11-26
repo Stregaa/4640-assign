@@ -276,6 +276,9 @@ resource "digitalocean_droplet" "web" {
 
 }
 ```  
-Apply Terraform:
-1. Use ```terraform apply```:
+Apply Terraform:  
+1. Validate the terraform configuration with ```terraform validate``` and ```terraform plan```. 
+2. Apply with ```terraform apply```:
+![image](https://user-images.githubusercontent.com/64290337/204082438-a7697e82-92c9-470e-9017-8e61c968934f.png)
 ![image](https://user-images.githubusercontent.com/64290337/204081456-13116bf2-53cc-487c-8e78-6d830964366a.png)
+3. Destroy the created resources with ```terraform destroy```
