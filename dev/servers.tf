@@ -1,11 +1,11 @@
 # Create a new Web Droplet in the sfo3 region
 resource "digitalocean_droplet" "web" {
-  image  = "rockylinux-9-x64"
+  image  = var.image
   count  = var.droplet_count
   name   = "web-${count.index + 1}"
   tags   = [digitalocean_tag.do_tag.id]
   region = var.region
-  size   = "s-1vcpu-512mb-10gb"
+  size   = var.size
   ssh_keys = [data.digitalocean_ssh_key.droplet_ssh_key.id]
   vpc_uuid = digitalocean_vpc.web_vpc.id
 

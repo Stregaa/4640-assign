@@ -17,3 +17,15 @@ variable "droplet_count" {
   type = number
   default = 2
 }
+
+# set default image
+variable "image" {
+  type = string
+  default = "rockylinux-9-x64"
+}
+
+# set default size
+variable "size" {
+  type = string
+  default = "s-1vcpu-512mb-10gb"
+}
